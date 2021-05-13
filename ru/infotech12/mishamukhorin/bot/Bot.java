@@ -13,7 +13,7 @@ public class Bot extends TelegramLongPollingBot {
 	public String getBotUsername() { return "MrLogicDevBot"; }
 	
 	@Override
-	public String getBotToken() { return "1669382635:AAHjQwOvDMZ3l0sO3wpPUx4zG545WsVj_Bs"; }
+	public String getBotToken() { return /*bot token*/; }
 	
 	@Override
 	public void onUpdateReceived(Update update) {
