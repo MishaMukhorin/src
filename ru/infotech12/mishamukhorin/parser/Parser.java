@@ -104,11 +104,8 @@ public class Parser {
         	    	 document = Jsoup.connect(arg).get();
         	    	 int i = 1;
         	    	 while (document.select(postBodySelector).text() != "" )
-        	    	 {
-        	    		 if (articleText + document.select(postBodySelector).text() != "")  
-        	    		 {
-        	    			 articleText = articleText + document.select(postBodySelector).text();
-        	    		 }
+        	    	 {        	    		 
+        	    		 articleText = articleText + document.select(postBodySelector).text();
         	    		 i = i + 1;
         	    		 postBodySelector = "#post-content-body:nth-child(" + i + ")";
         	    	 }
