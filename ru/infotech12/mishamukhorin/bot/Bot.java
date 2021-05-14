@@ -37,6 +37,10 @@ public class Bot extends TelegramLongPollingBot {
 					SendMsg(message, "Запускаем парсер!");
 					String urlToParse = msg.substring(7).trim();
 					String articlePath = null;
+					if (!urlToParse.endsWith("/")) 
+					{
+						urlToParse = urlToParse + "/";
+					}
 					if (urlToParse != null) 
 					{
 						articlePath = Parser.Parse(urlToParse);
